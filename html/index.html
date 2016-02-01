@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+
+    <title>Mitch Lane</title>
+
+    
+
+
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<!--[if lte IE 8]>
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  
+<!--<![endif]-->
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/blog.css">
+    <!--<![endif]-->
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Mitch Lane</h1>
+            <img alt="Mitch Biking"
+                class="pure-img-responsive"
+                src="img/common/mitchTruck.jpg"/>
+           <p><br>Hey! My name is Mitch Lane. I am a software engineering
+              student at Cal Poly, San Luis Obispo. <br><br>
+              
+              I am currently working on an auto derivative mesh optimization subroutine for
+              a parametric aircraft geometry tool called OpenVSP. You can check OpenVSP
+              out <a href="http://www.openvsp.org/">here</a>.<br></p>
+
+           <p>If you have any questions, you can email me at <a href="mailto:mrlane@calpoly.edu">
+              mrlane@calpoly.edu</a>. If you want to know more about me, check out my
+              <a href="img/common/mitch_lane_resume.pdf">resume</a>. To see some of the 
+              cool projects that I have been working on, head over to my 
+              <a href="https://github.com/mitchlane">github profile</a>.</p>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Projects</h2>
+                    </header>
+                    <header class="post-header">
+                        <h3 class="post-title">Mercenary Manager</h3>
+                    </header>
+                    <iframe width="768" height="512"
+                        src="https://docs.google.com/file/d/0B7C0WsMfbArZRXRKc1dMMm9tZGs/preview">
+                    </iframe>
+                    <div class="post-description">
+                        <p><b>Project Description:</b> "Have you ever wanted to take advantage of ambitious young dreamers looking to make a name for themselves in a fantasy setting? Well now you can! Buy beer! Buy food! Buy people! Take your mercenaries on a merry trip robbing merchants and fighting off bandits all in the name of profit. There is no better time than now to become a venture capitalist."
+                            <br>
+                            Mercenary Manager is a medieval-themed managerial game in which players
+                            attempt to obtain and maintain as many resources, (food, beer, and 
+                            mercenaries), as possible. It was developed in a team of six members over
+                            a ten week period.
+                            <br>
+                            My responsibilities for the project included the impelemetation of the
+                            HUD, collision detection algorithms, and development of game logic.
+                        </p>
+                    </div>
+                    <header class="post-header">
+                        <h3 class="post-title">Negative Volumes</h3>
+                    </header>
+                    <div>
+                        <div class="post-images pure-g">
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt=""
+                                         class="pure-img-responsive"
+                                         src="img/common/vspPort1.png">
+                            </div>
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive"
+                                         src="img/common/vspPort3.png">
+                            </div>
+                            </div>
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive"
+                                         src="img/common/vspPort2.png">
+                            </div>
+                        </div>
+                        <div class="post-description">
+                            <p>One of my tasks for OpenVSP was to implement "negative volumes" for its
+                               CFD mesh routine. The subroutine for determining if a triangle in the
+                               mesh should be deleted or not was never designed for such functionalit,
+                               so a large code refactor was needed. Along with negative volumes, I
+                               included "transparent volumes," or objects that are not affected when
+                               overlapping with another "positive volume, but should be deleted if
+                               overlapping with a "negative volume."
+                               <br><br>
+                               The number of edge cases made finding a concise solution difficult.
+                               For example, my algorithm had to know how to handle a negative volume
+                               inside a negative volume inside a transparent volume inside a positive
+                               volume. Fringe cases such as these made determining whether to delete
+                               a mesh triangle or not difficult.
+                           
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <header class="post-header">
+                            <h3 class="post-title">Ergonomics Analysis of Touchscreens in Vehicles - Android Application</h3>
+                        </header>
+                        </div>
+                        <div class="post-images pure-g">
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt=""
+                                         class="pure-img-responsive"
+                                         src="img/common/Homescreen.png">
+                            </div>
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive"
+                                         src="img/common/Keypad.png">
+                            </div>
+                            </div>
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive"
+                                         src="img/common/Dragcomplete.png">
+                        </div>
+                        <div class="post-description">
+                          <p>
+                            During my 2015 Summer vacation, my beautiful girlfriend requested that I
+                            create a mobile application to assist in recording data of various
+                            subjects performing a variety of tasks. She needed this data to
+                            investigate whether or not gender and hand dominance impact automobile
+                            operators' abilities to navigate a vehicle while interfacing with a
+                            touchscreen.
+                            <br><br>
+                            The upper left image is the homescreen of the application.
+                            Users select a task
+                            to complete by taping on one of the three images.
+                            <br><br>
+                            The first task is shown in the upper right corner. On each tap on a
+                            numbered box, the numbers are randomly to different boxes. When a user
+                            was asked to complete this task, they were told to select a specific
+                            number three times. When they complete the task, they hit the button
+                            labeled "Done." Then, their time is recorded and they are returned to the
+                            homescreen.
+                            <br><br>
+                            The bottom left image shows the drag task. Users were asked to drag the
+                            grey circle along the slider until the number at the end of the silder
+                            matched the number above the slider. Like the previous task, their time
+                            was recorded.
+                            <br><br>
+                            I completed this task on my own time with no prior Android experience.
+                          </p>
+                        </div>
+                     </div>
+                    <header class="post-header">
+                        <h3 class="post-title">3D Sphere Collision in Maya</h3>
+                    </header>
+                    <div>
+                        <div class="post-images pure-g">
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt=""
+                                         class="pure-img-responsive"
+                                         src="img/common/pcd1.png">
+                            </div>
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive"
+                                         src="img/common/pcd4.png">
+                            </div>
+                            </div>
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive"
+                                         src="img/common/pcd3.png">
+                            </div>
+                        </div>
+                        <div class="post-description">
+                            <p>As a final project for my parallel programming applied to computer animation class,
+                               my partner and I chose to analyze the speedup from the host to a Xeon Phi as the
+                               number of particles in a cube increase. The collision detection algorithm has a
+                               complexity of O(n^2).
+                               <br><br>
+                               As the results from the chart show, little improvement was found by offloading the
+                               the programs computing 2,000 and 10,000 particles, but quite a large speedup
+                               was found by offloading the 100,000 particle program.
+                               <br><br>
+                               The bottom picture shows all cores on the Xeon Phi being occupied while running the
+                               100,000 particle program.
+                           
+                            </p>
+                        </div>
+                     </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
